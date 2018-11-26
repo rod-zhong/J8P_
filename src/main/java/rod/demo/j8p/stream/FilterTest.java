@@ -21,7 +21,7 @@ public class FilterTest {
         System.out.println("all list value is not negative number");
 
 
-        //及早求值和惰性求值. 下面的语句不会输出因为没有调用及早求值办法。
+        //unless to call terminal operation, the stream won't do anything
         myList.stream().filter(x-> {
             System.out.println("you won't see me"+x);
             return x > 3;
